@@ -18,7 +18,7 @@
     <div class="jumbotronHome announcements" [ngStyle]="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(' + announcement.pic.url + ')'}">
       <div class="container">
         <h1 class="announcementHeader" style="font-family: bebasN;">{{announcement.title}}</h1>
-        <h3 class="announcementDesc"><a href="/#/">{{announcement.description}}</a></h3>
+        <h3 class="announcementDesc"><a [href]="announcement.link || '/#/'">{{announcement.description}}</a></h3>
       </div>
     </div>
   </div>

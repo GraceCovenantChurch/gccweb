@@ -12,11 +12,6 @@ export class MaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.activeItem = {title: "", description: "", pic : {url: ""}};
-  }
-
-  onSubmit() {
-    console.log(this.activeItem["_id"]);
-    console.log(this.activeItem["pic"]);
+    this.activeItem = {title: "", description: "", link: "", pic : {url: ""}};
   }
 }

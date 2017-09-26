@@ -1,5 +1,5 @@
 
-<form  method="post" [action]=" '/admin/' + route + '/' + activeItem._id" enctype="multipart/form-data">
+<form ngNoForm method="post" [action]=" '/admin/' + route + '/' + activeItem._id " enctype="multipart/form-data">
     <input name="_id" class="form-control" type="hidden" [value]="activeItem._id" readonly/>
 
     <div class="form-group">
@@ -12,8 +12,12 @@
         <textarea rows="10" name="description" class="form-control" type="text" value="">{{activeItem.description}}</textarea>
     </div>
 
-    <image-preview-input [item]="activeItem"></image-preview-input>
+    <div class="form-group">
+        <label>Link</label>
+        <input name="link" class="form-control" type="text" value="{{activeItem.link}}"/>
+    </div>
 
+    <image-preview-input [item]="activeItem"></image-preview-input>
 
     <button type="submit" class="btn btn-primary">Save</button>
     <a class="btn btn-danger" [href]=" '/admin/' + route + '/' + activeItem._id + '/delete'">Delete</a>

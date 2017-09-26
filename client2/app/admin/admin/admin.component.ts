@@ -39,7 +39,7 @@ export class AdminComponent implements OnInit {
           this.assignProperties("Main Announcements", "mainAnnouncement", ["title", "description"], 'assets/templates/maForm.html');
           this.loadForm(MaComponent, "mainAnnouncement");
           this.createNew = function() {
-            return {_id:"", title: "", description: "", pic : {url: ""}};
+            return {_id:"", title: "", description: "", link: "", pic : {url: ""}};
           };
         });
         break;

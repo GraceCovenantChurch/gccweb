@@ -9,6 +9,9 @@ var Schema = mongoose.Schema({
   description: {
     type: String
   },
+  link: {
+    type: String,
+  },
   pic: { type: mongoose.Schema.Types.ObjectId, ref: 'File' },
   _pic: { type: mongoose.Schema.Types.ObjectId, ref: 'File', default: undefined },
 });

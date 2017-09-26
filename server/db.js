@@ -10,6 +10,7 @@ var db = {
       console.log('Connected to database');
 
       if (nconf.get('NODE_ENV') === 'dev') {
+        mongoose.set('debug', true);
         setTimeout(function() {
           seedDB().then(resolve).catch(function(err) {
             throw err;
