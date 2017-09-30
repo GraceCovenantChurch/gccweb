@@ -62,7 +62,7 @@ class Home extends Component {
                       <div className="container-fluid">
                         <h3>{announcement.title}</h3>
                         {
-                          announcement.internalLink ? 
+                          announcement.internalLink ?
                           <Link to={announcement.link || '#'}>{announcement.content}</Link> :
                           <a href={announcement.link || '#'}>{announcement.content}</a>
                         }

@@ -17,8 +17,8 @@ class Navbar extends Component {
 
   toggle() {
     let collapsed = this.state.collapsed;
-    let previousHeight = !collapsed ? `${15 + 40 * 2 + 1}px` : '1px';
-    let nextHeight = collapsed ? `${15 + 40 * 2 + 1}px` : '1px'
+    let previousHeight = !collapsed ? `${15 + 40 * 3 + 1}px` : '1px';
+    let nextHeight = collapsed ? `${15 + 40 * 3 + 1}px` : '1px'
 
     this.setState({
       collapsed: !collapsed,
@@ -88,6 +88,7 @@ class Navbar extends Component {
             height: this.state.height,
           }}>
             <ul className="nav navbar-nav navbar-right">
+              <li><NavLink to="/about">About Us</NavLink></li>
               <li><NavLink to="/page">Page</NavLink></li>
               <li><NavLink to="/pages/async">Async Page</NavLink></li>
             </ul>

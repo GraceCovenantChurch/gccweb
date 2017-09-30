@@ -35,4 +35,3 @@ function mapDispatchToProps(dispatch, ownProps) {
 }
 
 export default connect(state => state.page, mapDispatchToProps)(AsyncPage);
-
