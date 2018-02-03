@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Helmet from 'react-helmet';
 import withTitle from '../hoc/withTitle';
-import {SparkScroll} from '../modules/spark.js';
 import {compose} from 'redux';
 import {connect} from 'react-redux';
 import {Link, withRouter} from 'react-router-dom';
@@ -40,13 +39,9 @@ class Home extends Component {
             backgroundSize="cover"
             backgroundPosition="top left"
             backgroundAttachment="local"/>
-          <SparkScroll
+          <div
             className={styles.title}
-            style={{ color: 'white', top: '40%'}}
-            timeline={{
-              centerCenter: {opacity: 0},
-              bottomBottom: {opacity: 1}
-            }}>
+            style={{ color: 'white', top: '40%'}}>
               <h1>
                 Grace Covenant Church
               </h1>
@@ -56,7 +51,7 @@ class Home extends Component {
                   influenced by Christ to change the world.
                 </h3>
               </div>
-          </SparkScroll>
+          </div>
         </Jumbotron>
 
         <Banner src="/static/images/home/welcome.jpg" topMargin={30}>

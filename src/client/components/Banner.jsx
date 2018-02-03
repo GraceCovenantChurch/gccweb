@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import Center from './Center';
 import Jumbotron from './Jumbotron';
 import BackgroundImage from './BackgroundImage';
-import { SparkScroll } from '../modules/spark.js';
 
 import styles from './Banner.css';
 
@@ -16,15 +15,12 @@ class Banner extends Component {
           backgroundSize="cover"
           backgroundPosition="top left"
           backgroundAttachment="local"/>
-        <SparkScroll
+        <div
           className={styles.title}
           style={{ color: 'white', top: this.props.topMargin + "%"}}
-          timeline={{
-            centerCenter: { opacity: 1 },
-            topTop: { opacity: 0 }
-          }}>
+        >
           { this.props.children }
-        </SparkScroll>
+        </div>
       </Jumbotron>
     );
   }

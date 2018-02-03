@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import Center from './Center';
 import Jumbotron from './Jumbotron';
 import BackgroundImage from './BackgroundImage';
-import { SparkScroll } from '../modules/spark.js';
 
 import * as constFunc from './utilities/functions';
 
@@ -21,7 +20,7 @@ class BannerBibleVerse extends Component {
           backgroundPosition="top left"
           backgroundAttachment="fixed" />
         <Center horizontal vertical>
-          <SparkScroll
+          <div
           className={styles.bibleVerse}
           style={{ color: 'black' }}>
               <h1>
@@ -33,7 +32,7 @@ class BannerBibleVerse extends Component {
               <h4>
                 { constFunc.getCitation() }
               </h4>
-            </SparkScroll>
+            </div>
           </Center>
       </Jumbotron>
     );
