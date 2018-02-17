@@ -6,6 +6,7 @@ import Jumbotron from './Jumbotron';
 import BackgroundImage from './BackgroundImage';
 
 import styles from './TitleBanner.css';
+import templateStyles from '../templates/MainTemplate.css';
 
 class TitleBanner extends Component {
   render() {
@@ -18,7 +19,7 @@ class TitleBanner extends Component {
           backgroundAttachment="local" />
           <Center horizontal vertical>
             <div
-              className={styles.titleText}
+              className={classnames(styles.titleText, templateStyles.header)}
               style={{ color: 'white' }}>
               { this.props.children }
             </div>

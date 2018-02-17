@@ -19,6 +19,7 @@ import {fetchModelData} from '../modules/modelData';
 
 import * as constVars from './vars/home-vars.js';
 import styles from './Home.css';
+import templateStyles from '../templates/MainTemplate.css';
 
 class Home extends Component {
 
@@ -42,7 +43,7 @@ class Home extends Component {
           <div
             className={styles.title}
             style={{ color: 'white', top: '40%'}}>
-              <h1>
+              <h1 className={templateStyles.header}>
                 Grace Covenant Church
               </h1>
               <div className={styles.subtitle}>
@@ -55,7 +56,7 @@ class Home extends Component {
         </Jumbotron>
 
         <Banner src="/static/images/home/welcome.jpg" topMargin={30}>
-          <h1>
+          <h1 className={templateStyles.header}>
             Join Us In Worship
           </h1>
           <div className={styles.subtitle}>
@@ -74,7 +75,7 @@ class Home extends Component {
         </Banner>
 
         <Banner src="/static/images/home/familygroup.jpg" topMargin={30}>
-          <h1>
+          <h1 className={templateStyles.header}>
             Family Group
           </h1>
           <div className={styles.subtitle}>
@@ -88,7 +89,7 @@ class Home extends Component {
         </Banner>
 
         <Banner src="/static/images/home/events.jpg" topMargin={20}>
-          <h1>
+          <h1 className={templateStyles.header}>
             Events
           </h1>
           <div className={styles.subtitle}>

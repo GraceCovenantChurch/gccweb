@@ -11,8 +11,8 @@
 
 .subtitle h3, h4 {
   padding-bottom: 30px;
-  font-family: 'Helvetica Neue';
-  font-weight: normal;
+  /*font-family: 'Helvetica Neue';
+  font-weight: normal;*/
 }
 
 /**
@@ -22,8 +22,10 @@
   background-color: Transparent;
   color: white;
   border: 1px solid white;
-  height: 75px;
-  width: 300px;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 300;
 
   &:hover{
     background: rgba(255, 255, 255, 0.2);
