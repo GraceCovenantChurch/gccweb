@@ -32,7 +32,7 @@ class Ministries extends Component {
           <link rel="stylesheet" type="text/css" href="/public/assets/pages/Ministries.bundle.css" />
         </Helmet>
 
-        <TitleBanner src="/static/images/home/philly.jpg">
+        <TitleBanner src="/static/images/headers/ministries.jpg">
           <Center horizontal vertical>
             Ministries
           </Center>

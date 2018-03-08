@@ -27,6 +27,10 @@ if (nconf.get('NODE_ENV') !== 'production') {
   app.use(logger('tiny'));
 }
 
+app.use('/static/images/:image([A-Za-z\d\/]*)', function(req, res){
+  res.redirect('https://s3.amazonaws.com/gcc-public/static/images/' + req.params.image);
+})
+
 app.use('/static', express.static(path.join(__dirname, '../../static')));
 app.use('/bower_components', express.static(path.join(__dirname, '../../bower_components')));
 app.use('/public', express.static(path.join(__dirname, '../public')));

@@ -19,7 +19,7 @@ class Welcome extends Component {
           <link rel="stylesheet" type="text/css" href="public/assets/pages/welcome/Welcome.bundle.css" />
         </Helmet>
 
-        <TitleBanner src="/static/images/welcome/welcome_background.jpg">
+        <TitleBanner src="/static/images/headers/welcome.jpg">
           <Center horizontal vertical>
             Welcome!
           </Center>

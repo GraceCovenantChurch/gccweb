@@ -16,7 +16,7 @@ class FamilyGroup extends Component {
           <link rel="stylesheet" type="text/css" href="/public/assets/pages/FamilyGroup.bundle.css" />
         </Helmet>
 
-        <TitleBanner src="/static/images/home/philly.jpg">
+        <TitleBanner src="/static/images/headers/fg.jpg">
           Family Group
         </TitleBanner>
 

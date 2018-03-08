@@ -36,7 +36,7 @@ class Home extends Component {
 
         <Jumbotron style={{height: '100vh'}}>
           <BackgroundImage
-            src="/static/images/home/philly.jpg"
+            src="/static/images/home/beliefs.jpg"
             backgroundSize="cover"
             backgroundPosition="top left"
             backgroundAttachment="local"/>
@@ -55,7 +55,7 @@ class Home extends Component {
           </div>
         </Jumbotron>
 
-        <Banner src="/static/images/home/welcome.jpg" topMargin={30}>
+        <Banner src="/static/images/home/worship.jpg" topMargin={30}>
           <h1 className={templateStyles.headerHome}>
             Join Us In Worship
           </h1>
@@ -74,7 +74,7 @@ class Home extends Component {
           </div>
         </Banner>
 
-        <Banner src="/static/images/home/familygroup.jpg" topMargin={30}>
+        <Banner src="/static/images/home/fg.jpg" topMargin={30}>
           <h1 className={templateStyles.headerHome}>
             Family Group
           </h1>
